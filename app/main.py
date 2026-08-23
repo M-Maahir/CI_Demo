@@ -10,3 +10,8 @@ def home():
         "message":"This is the main get method"
     }
 
+@app.get("/users")
+def users(user: dict):
+    return {
+        "user":user
+    }
