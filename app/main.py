@@ -7,7 +7,7 @@ app = FastAPI()
 def home():
 
     return{
-        "message":"This is the main get method"
+        "message":"Maahir from feature branch"
     }
 
 @app.get("/users")
