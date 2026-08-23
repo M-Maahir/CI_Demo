@@ -7,7 +7,7 @@ app = FastAPI()
 def home():
 
     return{
-        "message":"Maahir from feature branch"
+        "message":"Maahir from feature branch one"
     }
 
 @app.get("/users")
