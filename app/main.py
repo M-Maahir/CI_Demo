@@ -7,11 +7,17 @@ app = FastAPI()
 def home():
 
     return{
-        "message":"This is the main get method"
+        "message":"Maahir from feature branch one"
     }
 
-@app.get("/users")
-def users(user: dict):
+@app.get("/users/{user}")
+def users(user: str):
     return {
         "user":user
+    }
+
+@app.get('/names')
+def names():
+    return{
+        "names":"Maahir is one of the name"
     }
